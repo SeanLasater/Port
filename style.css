@@ -13,17 +13,15 @@ body {
     background-position: 50% 5%;
     opacity: 0.9;
     block-size: 14rem;
-    
 }
 
 #Logo {
     height: 14em;
-    opacity: .9;
+    opacity: .8;
 }
 
 #Name {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: lightgrey;
+    font-family: 'Oswald', sans-serif;
     font-size: x-large;
     font-weight: bold;
     margin: 1em;
@@ -49,10 +47,12 @@ button {
 .current-data {
     margin: 1em;
     float: left;
-    text-decoration: underline;
+    margin: 1% 8%;
 }
 
 h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
+    color: black;
+    opacity: 0.8;
 }
