@@ -1,0 +1,58 @@
+* {
+    border: auto;
+    margin: auto;
+}
+
+body {
+    background-color: bisque;
+}
+
+.container {
+    background-image: url('img/image.jpeg');
+    background-size: 70rem;
+    background-position: 50% 5%;
+    opacity: 0.9;
+    block-size: 14rem;
+    
+}
+
+#Logo {
+    height: 14em;
+    opacity: .9;
+}
+
+#Name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightgrey;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.contact {
+    color: black;
+}
+
+button {
+    margin: 1rem;
+}
+
+.sidebar {
+    background-color: black;
+}
+
+.main {
+    background-color: tan;
+    
+}
+
+.current-data {
+    margin: 1em;
+    float: left;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+}
