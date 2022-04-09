@@ -2,9 +2,9 @@ body {
   width: 100vw;
   height: 100vh;
   padding-left: 2em;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   position: absolute;
   overflow: hidden;
   background-image: url(img/image.jpg);
@@ -13,10 +13,12 @@ body {
 }
 
 h1 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
   color: white;
   opacity: 0.8;
 }
-
 /* Shell black-round container  */
 .resizable-container {
   width: 32em;
@@ -30,10 +32,9 @@ h1 {
   background-color:rgba(0,0,0,0.75);
   border-radius: 15px;
 }
-
 .header {
   width: 100vw;
-  height: 3.8vh;
+  height: 5vh;
   display: flex;
   cursor: move;
   z-index: 10;
@@ -42,12 +43,78 @@ h1 {
   background-color: gainsboro;
   opacity: 0.9;
 }
+.button-cont {
+  position: absolute;
+  display: flex;
+  left: 0;
+  padding-left: 0.5em;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+input {
+  -webkit-animation: blink 0.5s step-end infinite alternate;
+          animation: blink 0.5s step-end infinite alternate;
+  border: none;
+  width: 100vw;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 10pt;
+  background: none;
+  position: absolute;
+  bottom: 0;
+  border-left: 4px solid grey;
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+input.notempty, input:focus {
+  border: none;
+}
+
+
+#close {
+  background-color: #d63b3b; /* Green */
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+}
+#minimize {
+  background-color: #ffc508; /* Green */
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+}
+#fullscreen {
+  background-color: #4CAF50; /* Green */
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+}
+
+.bash-window {
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 10pt;
+  width: 30vw;
+  height: 45vh;
+  position: absolute;
+  padding: 2em;
+  color: white;
+  text-align: left;
+}
 
 .resizer {
   /* All resizers are positioned absolutely inside the element */
   position: absolute;
 }
-
 /* Placed at the right side */
 .resizer-r {
   cursor: col-resize;
@@ -56,7 +123,6 @@ h1 {
   top: 0;
   width: 5px;
 }
-
 /* Placed at the bottom side */
 .resizer-b {
   bottom: 0;

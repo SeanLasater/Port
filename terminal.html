@@ -14,24 +14,26 @@
 </head>
 
 <body>
-    <h1>Mac OS</h1>
-    <div id="mydiv" class="resizable-container" >
-        <div id="mydivheader" class="header">
-            <div class="close"></div>
-            <div class="minimize"></div>
-            <div class="fullscreen"></div>
-            <div class="title">
-                <p id="term-titlebar">Terminal</p>  
-                <!-- resizer resizer-r and b was here -->
-            </div>
-            <div class="resizer resizer-r"></div>
-            <div class="resizer resizer-b"></div> 
+    <h1> Mac OS </h1>
+    <div id="mydiv" class="resizable-container">
+        <div class="bash-window">
+            <p>> Welcome to my bash style portfolio</p>
+            <input id="bash-text" type="text" placeholder=" ">
         </div>
-        <div>
+        <div id="mydivheader" class="header">
+            <div class="button-cont">
+                <button id="close" class=""></button>
+                <button id="minimize" class=""></button>
+                <button id="fullscreen" class=""></button>
+            </div>
+            <div class="title">
+                <p id="term-titlebar">Terminal</p>
+            </div>
             
+            <div class="resizer resizer-r"></div>
+            <div class="resizer resizer-b"></div>
         </div>
 
     </div>
-    <!-- <script src="script.js"></script> -->
     <script src="move.js"></script>
 </body>
