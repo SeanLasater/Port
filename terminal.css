@@ -1,0 +1,67 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 2em;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: absolute;
+  overflow: hidden;
+  background-image: url(img/image.jpg);
+  background-size: 1500px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: white;
+  opacity: 0.8;
+}
+
+/* Shell black-round container  */
+.resizable-container {
+  width: 32em;
+  height: 20em;
+  position: absolute;
+  text-align: center;
+  resize: both;
+  z-index: 9;
+  display: flex;
+  overflow: hidden;
+  background-color:rgba(0,0,0,0.75);
+  border-radius: 15px;
+}
+
+.header {
+  width: 100vw;
+  height: 3.8vh;
+  display: flex;
+  cursor: move;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+  opacity: 0.9;
+}
+
+.resizer {
+  /* All resizers are positioned absolutely inside the element */
+  position: absolute;
+}
+
+/* Placed at the right side */
+.resizer-r {
+  cursor: col-resize;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 5px;
+}
+
+/* Placed at the bottom side */
+.resizer-b {
+  bottom: 0;
+  cursor: row-resize;
+  height: 5px;
+  left: 0;
+  width: 100%;
+}
