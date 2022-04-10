@@ -34,7 +34,7 @@ h1 {
 }
 .header {
   width: 100vw;
-  height: 5vh;
+  height: 3vh;
   display: flex;
   cursor: move;
   z-index: 10;
@@ -69,7 +69,7 @@ input {
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: 10pt;
   background: none;
-  position: absolute;
+  position: relative;
   bottom: 0;
   border-left: 4px solid grey;
   color: white;
@@ -83,19 +83,19 @@ input.notempty, input:focus {
 
 #close {
   background-color: #d63b3b; /* Green */
-  padding: 8px 8px;
+  padding: 6px 6px;
   border: none;
   border-radius: 50%;
 }
 #minimize {
   background-color: #ffc508; /* Green */
-  padding: 8px 8px;
+  padding: 6px 6px;
   border: none;
   border-radius: 50%;
 }
 #fullscreen {
   background-color: #4CAF50; /* Green */
-  padding: 8px 8px;
+  padding: 6px 6px;
   border: none;
   border-radius: 50%;
 }
