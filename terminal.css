@@ -8,7 +8,7 @@ body {
   position: absolute;
   overflow: hidden;
   background-image: url(img/image.jpg);
-  background-size: 1500px;
+  background-size: 110%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -21,7 +21,7 @@ h1 {
 }
 /* Shell black-round container  */
 .resizable-container {
-  width: 32em;
+  width: 34em;
   height: 20em;
   position: absolute;
   text-align: center;

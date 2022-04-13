@@ -42,3 +42,8 @@ function dragElement(elmnt) {
         document.onmousemove = null;
     }
 }
+
+
+//FEATURES
+
+// Add date and time to #term-titlebar
